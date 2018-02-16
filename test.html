@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border-radius:50%;
+  height:2px; width:2px; /* To allow border-radius to work */
+  position:absolute;
+  top:50%; left:50%;
+  margin-top:-1px; margin-left:-1px;
+  box-shadow:
+   
+     40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  -webkit-animation:rotate 5s 2 linear;
+  animation:rotate 0.7s 1 linear;
+}
+@keyframes rotate {
+  16.67% {
+    box-shadow:
+     
+      40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+  33.33%   { 
+    box-shadow:
+    
+      30px 0px 0 10px red,
+    0px    -30px 0 10px green, 
+    0px  30px 0 10px blue,
+   -30px    0px 0 10px yellow;
+  }
+  50%      { 
+    box-shadow:
+     
+      20px 0px 0 10px red,
+    0px    -20px 0 10px green, 
+    0px  20px 0 10px blue,
+   -20px    0px 0 10px yellow;
+  }
+  66.67%   { 
+    box-shadow:
+    
+      30px 0px 0 10px red,
+    0px    -30px 0 10px green, 
+    0px  30px 0 10px blue,
+   -30px    0px 0 10px yellow;
+  }
+  88.88%   { 
+    box-shadow:
+     
+       35px 0px 0 10px red,
+    0px    -35px 0 10px green, 
+    0px  35px 0 10px blue,
+   -35px    0px 0 10px yellow;
+  }
+  100% {
+    transform:rotate(360deg);
+    box-shadow:
+     
+       40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+}
+@-webkit-keyframes rotate {
+  16.67% {
+    box-shadow:
+      
+       40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+  33.33%   { 
+    box-shadow:
+     
+       40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+  50%      { 
+    box-shadow:
+     
+       40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+  66.67%   { 
+    box-shadow:
+     
+      40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+  88.88%   { 
+    box-shadow:
+     
+       40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+  100% {
+    -webkit-transform:rotate(360deg);
+    box-shadow:
+      
+       40px 0px 0 10px red,
+    0px    -40px 0 10px green, 
+    0px  40px 0 10px blue,
+   -40px    0px 0 10px yellow;
+  }
+}
+</style>
+</head>
+<body>
+
+ <div></div>
+</body>
+</html>
